@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9e631b96fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="imagem/png" href="/src/img/favicon.ico" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/admin.css" />
+    <title>ADMIN</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="kenzie-h1">Kenzie <span id="food-h1">Food</span></h1>
+      <div id="header-div">
+        <img src="../img/icon-user.png" alt="" id="img-logado" />
+        <input
+          type="text"
+          placeholder="Pesquisar por produto"
+          id="search-input"
+          class="add-search"
+        />
+      </div>
+    </header>
+
+    <nav>
+      <div id="container-div">
+        <button id="all-button">Todos</button>
+        <button id="bakery-button">
+          <img class="filter-img" src="../img/bakery.png" alt="bread" />
+          Panificadora
+        </button>
+        <button id="fruits-button">
+          <img
+            class="filter-img"
+            id="fruits-img"
+            src="../img/fruits.png"
+            alt="fruits"
+          />
+          Frutas
+        </button>
+        <button id="drinks-button">
+          <img class="filter-img" src="../img/drink.png" alt="drink" /> Bebidas
+        </button>
+      </div>
+      <div id="add-div">
+        <button id="add-button">Adicionar novo produto</button>
+      </div>
+    </nav>
+    
+    <section id="card-section" class="container">
+
+    </section>
+
+    <script type="module" src="../js/controllers/admin.js"></script>
+    <script type="module" src="../js/controllers/filtersButtons.js"></script>
+  </body>
+</html>

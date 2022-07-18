@@ -1,0 +1,199 @@
+header h1 {
+    font-family: "Poppins";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 33px;
+    margin: 20px;
+    color: rgba(33, 37, 41, 1);
+}
+
+header span {
+    font-size: 16px;
+    color: rgba(255, 34, 83, 1);
+}
+
+header button {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    height: 40px;
+    border: 1.5px solid #FF2253;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 10px 25px;
+    align-items: center;
+    background: #FF2253;
+    color: #F8F9FA;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.template {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.template h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #212529;
+}
+
+.template p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #868E96;
+}
+
+.template input {
+    width: 80vw;
+    border: 1.5px solid #DEE2E6;
+    box-sizing: border-box;
+    border-radius: 12px;
+    color: #868E96;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0px;
+    padding: 10px 2px 10px 20px;
+    margin-bottom: 16px;
+}
+
+.register-email {
+    background: #DEE2E6;
+}
+
+.button-register {
+    border: 1.5px solid #F8F9FA;
+    box-sizing: border-box;
+    border-radius: 32px;
+    width: 186px;
+    height: 48px;
+    left: 15px;
+    color: #212529;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+
+.containerModal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 250px;
+    height: 250px;
+    border: 1.5px solid #FF2253;
+    background-color: #F8F9FA;
+    position: relative;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+}
+
+.containerModal .modal button.removeModal {
+    color: #180206;
+    background: none;
+    font-size: 25px;
+    border: none;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    cursor: pointer;
+}
+.header-modal{
+    border-radius: 12px 12px 0 0 ;
+    background-color: #FF2253;
+    height: 15%;
+}
+.message-register{
+    color: #212529;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding-top: 10px;
+}
+.hidden {
+    display: none;
+}
+
+.redirect-login {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid #FF2253;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-left: 25vw;    
+    bottom: 5px;
+    background-color: #FF2253;
+    color: #F8F9FA;
+}
+
+
+@media (min-width: 720px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 18px;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    header p {
+        font-size: 30px;
+    }
+
+    header button {
+        margin-right: 115px;
+        margin-top: 20px;
+        width: 186px;
+    }
+
+    .template input {
+        width: 395px;
+        height: 60px;
+    }
+
+    .modal {
+        width: 450px;
+    }
+
+}

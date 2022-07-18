@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Inter&family=Montserrat:wght@300&family=Poppins:ital,wght@0,700;1,200&family=Roboto&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="imagem/png" href="/src/img/favicon.ico" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/admin.css">
+
+    <title>Login</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Kenzie <span>Food</span></h1>
+      <button id="redirectHome" class="button">Home</button>
+    </header>
+    <main>
+      <h2>Login</h2>
+      <form id="loginForm">
+        <span>Preencha os dados abaixo</span>
+        <input type="email" placeholder="Digite seu email" />
+        <input class="cor" type="password" placeholder="Digite sua senha" />
+        <p>Não tem uma conta? <a href="./register.html">Clique aqui</a></p>
+        <button class="button">Entrar</button>
+      </form>
+    </main>
+
+    <script type="module" src="../js/controllers/login.js"></script>
+  </body>
+</html>

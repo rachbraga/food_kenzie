@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Inter&family=Montserrat:wght@300&family=Poppins:ital,wght@0,700;1,200&family=Roboto&family=Shizuru&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9e631b96fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/styles/register.css">
+    <title>Register</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Kenzie <span>Food</span></h1>
+        <button class="redirect-home">Home</button>
+    </header>
+
+    <main>
+        <form class="template">
+            <h2>Cadastro</h2>
+            <p>Preencha os dados abaixo </p>
+            <input class="register-name" type="text" name="name" placeholder="Nome">
+            <input class="register-email" type="email" name="email" placeholder="Email">
+            <input class="register-password" type="password" name="password" placeholder="Senha">
+            <button class="button-register"> Cadastrar</button>
+        </form>
+    </main>
+
+    <section class="containerModal hidden">
+        <div class="modal">
+            <div class="header-modal"></div>
+           <button class="removeModal">X</button>
+           <p class="message-register"></p>
+           <button class="redirect-login">Ir para login</button>
+        </div>
+    </section>
+
+
+    <script type="module" src="/src/js/controllers/register.js"></script>
+</body>
+
+</html>

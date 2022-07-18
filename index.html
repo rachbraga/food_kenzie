@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9e631b96fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="imagem/png" href="/src/img/favicon.ico" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/home.css" />
+    <title>HOME</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Kenzie <span>Food</span></h1>
+      <div class="input">
+        <button class="button" id="login">Login</button>
+        <button class="button" id="register">Cadastro</button>
+        <button class="button" id="admin">Admin</button>
+        <input
+          type="text"
+          placeholder="Pesquisar por produto"
+          id="add-search"
+        />
+      </div>
+    </header>
+
+    <!-- comentario salvando o dia -->
+
+    <main>
+      <nav>
+        <div id="container-div">
+          <button id="all-button">Todos</button>
+          <button id="bakery-button">
+            <img class="filter-img" src="/src/img/bakery.png" alt="bread" />
+            Panificadora
+          </button>
+          <button id="fruits-button">
+            <img
+              class="filter-img"
+              id="fruits-img"
+              src="/src/img/fruits.png"
+              alt="fruits"
+            />
+            Frutas
+          </button>
+          <button id="drinks-button">
+            <img class="filter-img" src="/src/img/drink.png" alt="drink" />
+            Bebidas
+          </button>
+        </div>
+      </nav>
+      <div class="global">
+        <section class="container"></section>
+        <div id="backgroundCart">
+        <aside class="modal">
+          <button id="cart"><i class="fa-solid fa-cart-arrow-down"></i>Carrinho</button>
+          <div id="containerCart">
+            <div style="overflow: scroll; width: 100%;" id="divCart">
+              <img style="margin: 0px auto; display: block;"src="/src/img/shopping-bag.png" alt="" />
+              <p style="margin: 0px auto; display: block;">Por enquanto não temos produtos no carrinho</p>
+            </div>
+            <ul class="totalCart">
+              <li id="quantity">
+                <p>Quantidade</p>
+                <p>0</p>
+              </li>
+              <li id="total">
+                <p>Total</p>
+                <p>R$ <span>0</span></p>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      </div>
+    </main>
+    <script type="module" src="./src/js/controllers/filterInput.js"></script>
+    <script type="module" src="./src/js/controllers/filtersButtons.js"></script>
+    <script type="module" src="/src/js/controllers/home.js"></script>
+  </body>
+</html>
