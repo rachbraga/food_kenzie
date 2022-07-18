@@ -2,7 +2,7 @@
 
 # API-KenzieFood
 
-Nesse trabalho vocês terão que consumir uma API de produtos.
+Nesse trabalho consumimos uma API de produtos.
 
 ## Rotas
 
